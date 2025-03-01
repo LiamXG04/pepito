@@ -1,0 +1,188 @@
+/* Estilos generales */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #2a5d6d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background: rgb(57, 32, 88);
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0076ec;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Botones generales */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.07);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Selector de zona */
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #bdc3c7;
+    font-size: 17px;
+    transition: border 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(52, 152, 219, 0.4);
+}
+
+/* Estilos para los espacios de parqueo */
+.espacio {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.espacio:hover {
+    transform: scale(1.12);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores para las diferentes zonas */
+.espacio-cubierto {
+    background: #2ecc71;
+    color: white;
+}
+
+.espacio-descubierto {
+    background: #f39c12;
+    color: white;
+}
+
+.espacio-vip {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Estilo para los espacios reservados */
+.reservado {
+    background: #95a5a6 !important;
+    opacity: 0.7;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Contenedor del resumen */
+.resumen-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #34495e;
+    color: white;
+    text-align: left;
+    width: 80%;
+    max-width: 450px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resumen-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.resumen-container h2 {
+    font-size: 22px;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.resumen-container p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.resumen-container strong {
+    color: #ecf0f1;
+}
+
+/* Estilo para el total de reserva */
+.total-reserva {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin-top: 10px;
+}
+
+/* Contenedor de horas */
+.horas-container {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.horas-container input {
+    width: 60px;
+    margin-left: 8px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Costo total */
+.costo-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #0076ec;
+}
+
+
+  
+  
