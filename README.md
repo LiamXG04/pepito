@@ -1,30 +1,55 @@
-# pepito
-# 🚗 reserva de estacionamientos en un parqueo inteligente  
+# 🥖 Optimización del Sistema de Gestión de Pedidos en Línea para Panadería Génesis
 
-## 📌 Descripción  
-Este proyecto es un sistema de reserva de estacionamientos desarrollado con **Next.js** y **React**, utilizando el hook `useState` para gestionar la disponibilidad y reserva de espacios de parqueo en diferentes zonas.  
+## 📌 Descripción
+La **Panadería Génesis**, ubicada en **San Salvador, El Salvador**, enfrenta dificultades en la gestión de pedidos en línea debido a la falta de un sistema automatizado. Esto genera **errores humanos**, **tiempos de respuesta lentos** y una **mala experiencia para los clientes**.
 
-El sistema permite a los usuarios seleccionar una zona de estacionamiento (**Cubierto, Descubierto o VIP**) y definir la duración de su estadía en horas. Basado en estos parámetros, se calcula automáticamente el costo total de la reserva.  
+Este proyecto tiene como objetivo desarrollar una **plataforma web en PHP** que permita gestionar pedidos de manera eficiente, optimizando el procesamiento y almacenamiento de datos para mejorar la operación del negocio.
 
-## ✨ Características principales  
-✔️ **Interfaz interactiva**: Los usuarios pueden seleccionar espacios disponibles y visualizar cuáles están reservados.  
-✔️ **Cálculo automático de tarifas**: Dependiendo del tipo de parqueo y la duración seleccionada.  
-✔️ **Diferentes tipos de estacionamiento**: Incluye zonas **Cubierto, Descubierto y VIP**, cada una con tarifas específicas.  
-✔️ **Diseño responsivo y dinámico**: Usa **CSS** para estilizar los espacios y mejorar la experiencia del usuario.  
-✔️ **Estructura modular**: Componentes reutilizables como `PlanoParqueo`, `Espacio` y `ResumenReserva`.  
+## ✨ Objetivo General
+🚀 Desarrollar un **sistema web en PHP** que **automatice la gestión de pedidos en línea**, mejorando la eficiencia operativa y la satisfacción del cliente.
 
-## 🛠️ Tecnologías utilizadas  
-- 🟢 **Next.js**: Para la estructura del proyecto y la optimización del rendimiento.  
-- 🎨 **CSS personalizado**: Para mejorar la visualización de los espacios de parqueo.  
-- ⚛️ **React (useState)**: Para manejar el estado de los espacios y las reservas en tiempo real.  
+## 🔹 Características principales
+✔️ **Formulario de pedidos en línea** con validación en tiempo real.  
+✔️ **Catálogo interactivo** con precios actualizados.  
+✔️ **Optimización del almacenamiento** de datos de pedidos en una base de datos.  
+✔️ **Reducción de errores en pedidos** en un **80%**.  
+✔️ **Incremento del 20% en las ventas en línea** en los primeros tres meses.  
 
-## 📌 Posibles mejoras  
-🚀 **Integración con base de datos** para almacenar reservas de manera persistente.  
-🔐 **Autenticación de usuarios** para gestionar clientes registrados.  
-💳 **Sistema de pagos en línea** para realizar reservas con anticipación.  
+## 🛠️ Tecnologías utilizadas
+- 🌐 **PHP** con **Laravel** o **CodeIgniter** para el desarrollo backend.  
+- 💾 **Base de datos SQL** para gestionar pedidos y clientes.  
+- 🎨 **HTML, CSS y JavaScript** para la interfaz de usuario.  
 
----
+## 📌 Metodología
+1. 📊 **Fase de Análisis**: Evaluación de los procesos actuales y definición de requerimientos.  
+2. 🎨 **Diseño**: Creación de diagramas de flujo y maquetas de la plataforma web.  
+3. 💻 **Desarrollo**: Implementación del sistema con PHP y un framework adecuado.  
+4. 🛠 **Pruebas**: Validación de funcionalidad, seguridad y usabilidad.  
+5. 🚀 **Implementación**: Lanzamiento del sistema y capacitación del equipo.  
 
-📌 **Autor**: William Bonilla  
-📌 **Carnet**: BP220765
-📆 **Fecha de creación**: 28/02/2025 
+## 👥 Equipo Participante
+- 👨‍💼 **Gerente del Proyecto**: Coordinador del desarrollo y planificación.  
+- 💻 **Desarrollador PHP**: Responsable de programar la plataforma.  
+- 📊 **Analista de Negocios**: Recopilación de requerimientos y realización de pruebas.  
+- 🎓 **Capacitador**: Formación del personal de la panadería.  
+
+## 💰 Posibles Fuentes de Financiamiento
+- ONG locales que apoyen pequeñas empresas.  
+- Instituciones financieras con créditos para PYMES.  
+- Programas gubernamentales de incentivos a negocios.  
+
+## ⚠️ Factores Críticos de Éxito
+- **Riesgos:** Falta de capacitación técnica del personal y conexión a Internet inestable.  
+- **Acciones Preventivas:** Capacitación previa y pruebas exhaustivas del sistema.  
+
+## ⏳ Duración Estimada
+📅 **Total: 4 meses**  
+- 📝 **Análisis y Diseño**: 1 mes.  
+- 💻 **Desarrollo**: 2 meses.  
+- 🛠 **Pruebas e Implementación**: 1 mes.  
+
+## 💲 Presupuesto Estimado
+- 💻 **Desarrollo de la plataforma**: $2,500  
+- 🎓 **Capacitación**: $500  
+- 🔧 **Mantenimiento inicial**: $300  
+💰 **Total:** $3,300 
