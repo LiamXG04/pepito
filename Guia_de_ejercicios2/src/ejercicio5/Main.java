@@ -10,11 +10,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Pelicula> peliculas = new ArrayList<>();
-        ArrayList<Sala> salas = new ArrayList<>();
-        ArrayList<Reserva> reservas = new ArrayList<>();
+        ArrayList<Pelicula> peliculas = new ArrayList<>(); // Lista de películas
+        ArrayList<Sala> salas = new ArrayList<>();         // Lista de salas
+        ArrayList<Reserva> reservas = new ArrayList<>();   // Lista de reservas
 
         int opcion;
+        // Menú principal del sistema de cine
         do {
             System.out.println("\n--- Menú Sistema de Cine ---");
             System.out.println("1. Agregar película");
@@ -25,10 +26,10 @@ public class Main {
             System.out.println("6. Salir");
             System.out.print("Opción: ");
             opcion = sc.nextInt();
-            sc.nextLine();
+            sc.nextLine(); // limpiar buffer
 
             switch(opcion) {
-                case 1:
+                case 1: // Agregar película
                     System.out.print("Código película: ");
                     String cod = sc.nextLine();
                     System.out.print("Título: ");
@@ -41,7 +42,7 @@ public class Main {
                     peliculas.add(new Pelicula(cod, tit, gen, dur));
                     break;
 
-                case 2:
+                case 2: // Agregar sala
                     System.out.print("Número de sala: ");
                     int num = sc.nextInt();
                     System.out.print("Capacidad total: ");
@@ -50,7 +51,7 @@ public class Main {
                     salas.add(new Sala(num, cap));
                     break;
 
-                case 3:
+                case 3: // Realizar reserva
                     System.out.print("Nombre del cliente: ");
                     String cliente = sc.nextLine();
 
@@ -74,7 +75,7 @@ public class Main {
                     System.out.print("Cantidad de asientos: ");
                     int asientos = sc.nextInt();
                     sc.nextLine();
-                    if(sala.reservar(asientos)) {
+                    if(sala.reservar(asientos)) { // Verifica si hay capacidad
                         reservas.add(new Reserva(cliente, peli, sala, asientos));
                         System.out.println("¡Reserva realizada correctamente!");
                     } else {
@@ -82,7 +83,7 @@ public class Main {
                     }
                     break;
 
-                case 4:
+                case 4: // Cancelar reserva
                     if(reservas.isEmpty()) {
                         System.out.println("No hay reservas para cancelar.");
                         break;
@@ -96,14 +97,14 @@ public class Main {
                     sc.nextLine();
                     if(numRes >= 1 && numRes <= reservas.size()) {
                         Reserva r = reservas.remove(numRes-1);
-                        r.getSala().cancelar(r.getAsientos());
+                        r.getSala().cancelar(r.getAsientos()); // Libera los asientos en la sala
                         System.out.println("Reserva cancelada: " + r);
                     } else {
                         System.out.println("Número inválido.");
                     }
                     break;
 
-                case 5:
+                case 5: // Mostrar reservas
                     if(reservas.isEmpty()) {
                         System.out.println("No hay reservas realizadas.");
                     } else {
@@ -112,9 +113,10 @@ public class Main {
                     }
                     break;
             }
-        } while(opcion != 6);
+        } while(opcion != 6); // Repetir hasta salir
 
-        sc.close();
+        sc.close(); // Cerrar Scanner
     }
 }
+
 

@@ -10,8 +10,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Vehiculo> vehiculos = new ArrayList<>();
+        ArrayList<Vehiculo> vehiculos = new ArrayList<>(); // Lista donde guardaremos autos y motos
 
+        // Registro de autos
         System.out.print("¿Cuántos autos desea ingresar?: ");
         int cantidadAutos = sc.nextInt();
         sc.nextLine();
@@ -27,9 +28,10 @@ public class Main {
             System.out.print("Número de puertas: ");
             int puertas = sc.nextInt();
             sc.nextLine();
-            vehiculos.add(new Auto(marca, modelo, año, puertas));
+            vehiculos.add(new Auto(marca, modelo, año, puertas)); // Agregar auto a la lista
         }
 
+        // Registro de motos
         System.out.print("\n¿Cuántas motos desea ingresar?: ");
         int cantidadMotos = sc.nextInt();
         sc.nextLine();
@@ -45,17 +47,19 @@ public class Main {
             System.out.print("Cilindraje: ");
             int cilindraje = sc.nextInt();
             sc.nextLine();
-            vehiculos.add(new Moto(marca, modelo, año, cilindraje));
+            vehiculos.add(new Moto(marca, modelo, año, cilindraje)); // Agregar moto a la lista
         }
 
+        // Mostrar información de todos los vehículos
         System.out.println("\n--- Información de Vehículos ---");
         for(Vehiculo v : vehiculos) {
             v.mostrarInfo();
             System.out.println("-------------------");
         }
 
-        sc.close();
+        sc.close(); // Cerrar Scanner
     }
 }
+
 
 
